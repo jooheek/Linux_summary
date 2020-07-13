@@ -1,0 +1,9 @@
+
+ls : lists directory contents
+cd : changes the current directory
+pwd : displays the present working directory
+cat : concatenates and displats files
+echo: displays arguments to the screen
+man : displays the online manual
+exit: exits the shell or your current session
+clear : clear the screen
