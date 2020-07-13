@@ -11,6 +11,25 @@
 /media : used to mount removable media like CD-ROMs
 /srv : contains data which is served by the system
 
+<Directory shortcut>
+. : this directory
+.. : the parent directory
+cd : change to the previous directory
+/ : directory separator
+
+<Creating and Removing Directories>
+mkdir [-p]directory : create a directory
+	mkdir -p 1/2/3 : make third-depth directory
+rmdir [-p]directory : remove 
+	only remove directories that are empty
+rm -rf directory : recursively removes directory
+	remove all the data in the file
+
+*there is no undo! BECAREFUL when using 'rm -rf directory' 
+
+
+
+
 
 
 
