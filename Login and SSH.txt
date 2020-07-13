@@ -1,0 +1,10 @@
+Linux login
+
+SSH?
+	secure shell
+	network protocol:primary purpose is to connect one system to another system securely
+	replace Telnet
+PuTTY
+	terminal emulator
+
+whicj SSH clients to use
