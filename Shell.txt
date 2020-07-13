@@ -1,0 +1,15 @@
+default UI for linux system= command line interface
+
+need terminal emulator to connect Shell
+
+<User>
+-[jason@linuxsvr ~]$ : using linux system as an normal user
+
+-[jason@linuxsvr ~]# :using linux system as a super user(root account)
+	can access to typically restricted area for system administrations
+
+<Tilde Expansion>
+-~jason = /home/jason
+-~pat = /home/pat
+-~root = /root
+-~ftp = /srv/ftp
