@@ -4,14 +4,36 @@
 2)how to see hidden files and directories
 	hidden files begin with period.(called "dot files")
 	use ls -a to show hidden files
-	ls -l -a == ls -la ==ls -al
+	'ls -l -a' == 'ls -la' =='ls -al'
 
 3)list files by type
-	use ls -F to reveal  file types( / :directory,@ :link, *:executable)
+	use 'ls -F' to reveal  file types( / :directory,@ :link, *:executable)
 	
 
-4)list files sorted by time
+4)list files sorted by ?
+	'ls -t' : list files by time
+	'ls -r' : reverse order
+	'ls -latr' : long listing including all files reverse sorted by time
+	'ls -R' : list files recursively
+		= the tree Command( may not access to tree command cuz it's not a default)
+			similar to 'ls -R' but creates visual output
+			'tree -d' : list directories only
+			'tree -C' : colorize output
+			'tree -Cd' : list  directories with color
+	'ls -d' : list directories not contents
+	'ls --color': colorize the output
+	'ls directory_name' : displays contents
+	'ls - l directory_name' : long listing inside directory
+	'ls -ld directory_name' : long listing directory
 
 5)handle spaces in file names
+	DO NOT USE SPACE IN NAMES
+	use(-,_,CamelCase)
+
+*when you have to work with spaces in names
+	-graping a file name with quotes( ' ' or " " )
+	
 
 6)what symbolic links are
+	link : a points to the actual file or directory
+	link can be user to create short cut(use for long file/directory name,use to indicate the current version of software )
