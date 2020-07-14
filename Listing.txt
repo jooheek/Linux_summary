@@ -1,6 +1,5 @@
 1)long listing format
-
-	- permissions/number of links/Owner name/Group name/Number of bytes in the file/Last modification time/file name
+	permissions/number of links/Owner name/Group name/Number of bytes in the file/Last modification time/file name
 
 2)how to see hidden files and directories
 	hidden files begin with period.(called "dot files")
@@ -8,6 +7,8 @@
 	ls -l -a == ls -la ==ls -al
 
 3)list files by type
+	use ls -F to reveal  file types( / :directory,@ :link, *:executable)
+	
 
 4)list files sorted by time
 
