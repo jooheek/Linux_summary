@@ -1,0 +1,16 @@
+1)long listing format
+
+	- permissions/number of links/Owner name/Group name/Number of bytes in the file/Last modification time/file name
+
+2)how to see hidden files and directories
+	hidden files begin with period.(called "dot files")
+	use ls -a to show hidden files
+	ls -l -a == ls -la ==ls -al
+
+3)list files by type
+
+4)list files sorted by time
+
+5)handle spaces in file names
+
+6)what symbolic links are
