@@ -1,0 +1,33 @@
+Symbolic permissions
+
+	symbol, type=(-,regular file),(d,directory),(l,symbolic link),(r,read),(w,write),(x,execute)
+
+permission categories
+	symbol,category=(u,user),(g,group),(o,other),(a,all)
+*every user is in at least one group
+*user can belong to many groups
+*'id -Gn'='groups'
+
+Decode permisson string
+
+	type(directory,file,link)/user(which function allowed to the user)/group/other
+	
+Changing permissions
+
+	chomd(*permission = mode)  : change mode command
+	ugoa	: user category user,group,other,all
+	+-=
+	rwx
+
+ex) chmod g+wx sales.data
+	sales.data파일에 group의 권한을 write,execute가능하게 변경한다.
+ex1)chmod a=r sales.data
+	sales.data파일에 user,group,other세 사용자 모두 read로 변경한다.
+ex3)chmod u=rwx, g=rx,o= sales.data
+	sales.data파일에 user는 read,write,execute group은 read,execute, other은 권한 없음으로 변경한다.
+
+
+Numeric based permission
+	따로정리
+
+ 
