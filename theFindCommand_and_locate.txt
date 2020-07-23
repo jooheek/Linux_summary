@@ -16,11 +16,3 @@ ex3) find . -name s* -ls : .에서 s로 시작하는 파일의 상세정보찾�
 ex4) find . -size +1M: .에서 1MB이상인 파일 찾기
 ex5) find . -type d - newer file.txt : file.txt생성 이후에 만들어진 파일 찾기
 ex6) find . -exec file {} |; :  찾은 모든 파일 실행하기
-
-locate
-	search pattern에 따른 list 불러올 수 있음
-	faster than find command(find와 달리index로 찾음)
-	파일이름의 일부만으로 검색가능
-	find에 비해 기능이 별로없다, real time으로 검색불가
-
-ex1) tpsreports를 찾을때 -> locate tpsre 
