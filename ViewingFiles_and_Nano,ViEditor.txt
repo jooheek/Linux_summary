@@ -1,0 +1,80 @@
+Displaying the Contents of Files
+
+cat file : display the contents of file
+more file : browse through a text file
+less file : more features than more
+head file : output the beginning portion of file
+tail file :output the ending portion of file
+
+
+
+ex1) more file, less file : 파일 검색결과 나옴 ->space(다음페이지) /enter(라인 하나더 출력)/q(검색중지)
+ 
+* head,tail :기본 10 라인
+	ex)tail -15 file.txt : file.txt에서 마지막 15라인 출력
+
+file -f file : log file같이 자주 변하는 파일의 변화를 출력할 때 사용된다/ctrl+c(중지)
+
+<Nano Editor>
+	간편한 편집기.vi나 emacs보다는 떨어짐.nano사용불가라면 pico쓸것
+
+ex1) nano file.type : ctrl +x(exit),ctrl+o(저장),ctrl+g(도움말)
+
+<Vi Editor>
+	
+vi file : edit file
+vim file : vi와 유사하지만 기능이 더 많다
+view file : 읽기모드로 vim 사용
+
+3가지 mode	
+1.command mode
+	Esc+j↑k↓h←l→/
+	x: 문자열 삭제
+	dw: 단어 삭제
+	dd: 한 라인 삭제
+	D:현 위치부터 삭제
+2.insert mode
+	i : 현재위치에 삽입
+	I :라인 시작에 삽입
+	a : 현재위치 뒤에 붙이기
+	A:라인 끝에 붙이기
+3.line mode :로시작함 입력후 enter
+	:w 파일을 저장/작성
+	:w! 파일을 강제 저장
+	:q  나가기
+	:q! 변경사항 저장하지 않고 나가기 
+	:wq! 작성하고 나가기
+	:x = :wq.
+	:n 커서를 라인n으로 옮기기
+	:$ 커서를 마지막 라인으로 옮기기
+	:set nu 라인번호기능 켜기
+	:set nonu 라인 번호기능 끄기
+	:help +명령어 명령어 관련 도움말 찾기
+
+
+r : 현재 문자열 변경
+cw : 현재 단어 변경
+cc : 현재 라인 변경
+c$ : 문자 현위치부터 변경 =C:
+~: 대문자->소문자, 소문자->대문자
+
+yy : 현재 라인 복사
+y<position> : <position>복사
+p : 가장 최근의 복사/삭제된 문자 붙여넣기
+*yank = copy
+
+ex1)yw :단어 복사
+ex2)y3w :단어 3개 복사
+
+u : 되돌리기
+ctrl +R : 명령어 다시 실행 
+
+/<pattern> : 앞쪽 검색->n(다음)/N(이전)
+?<pattern> : 뒤쪽 검색
+
+
+
+ex1) 5k : 라인 5개 올라가기
+ex2) 80i<Text><ESC> : <Text>80번 입력
+ex3) 80i_<Esc>:_ 80번 삽입
+
