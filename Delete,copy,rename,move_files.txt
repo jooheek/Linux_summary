@@ -1,0 +1,61 @@
+Remove
+
+rm file : Rename file
+rm -r dir : remove the directory and its contents recursively
+rm -f file : force removal and never prompt for confirmation
+
+*파일 삭제하기 전에 'ls '를 사용해 파일이름을 다시 확인할것
+
+Copy
+
+cp source_file destination_file	 : copy source_file to destination_file
+cp src_file1[srcc_fileName] destination_file : copu source_files to destination_directory
+cp -i : run in interative mode
+cp -r source_directory destination_directory : copy src_directory recuresively to destination
+
+
+ ex1) diff file1 file2 : file1과 file2사이의 차이가 있는지 확인
+ ex2) mkdir dir :dir directory생성
+ ex3) cp file1 file2 dir :dir에 file1,file2복사(file1,file2,file3... 과 같은 형태로 계속 나열할 수 있음)
+ ex4) cp -i file1 file2 : file1을 file2가 덮어쓰기 할 것인가
+ ex5) cp -r dir dir2 dir3 :dir3에 dir,di2복사
+ ex6) tree dir3 : tree 형태로 dir3경로보기
+
+*directory복사는 cp -r
+
+
+Move
+
+ mv : move or rename files and directories
+ mv source destination : source를 destination으로 이동/source가 destination의 새로운 이름(mv new_name old_name)
+ mv i source destination : cp -i 와 마찬가지로 interactive mode가 있다. destination이 존재할 경우 overwrite함
+
+
+
+Sorting Data
+
+sort file :sort text in file
+
+<sort option>
+ -k F :sort by key.(F는 필드 넘버)
+ -r :sort in reverse order
+ -u: sort unique
+
+ ex1) cat file :파일 정보 출력
+ ex2) sort file: 파일 정보 알파벳 순서로 출력 
+ ex3) sort -u file : 파일 정보 중 겹치는 사항 없이 출력
+ ex4) sort -ru file : 파일 정보증 겹치는 사항 없이 역 알파벳 순으로 출력
+
+
+Creating a collection of files
+	여러 파일을 한 세트로 묶어서 관리하기
+
+tar [-] c|x|t f tartfile [pattern] : create, extract or list contents of a tar archive using pattern,if supplied
+
+*c:create,x:execute,t:list v:verbose(상세),z:압축,f file :이 파일 사용
+
+압축 관련 명령어 (gzip,gunzip,gzcat,zcat)
+메모리 용량확인(du, du -k, du -h)
+ 
+
+ 
