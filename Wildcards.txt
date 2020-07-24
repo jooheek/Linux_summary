@@ -1,0 +1,15 @@
+Wildcards
+	character or string user for pattern matching
+	can be user with most commands(ls,rm,cp)
+	
+* : matches zero or more character
+	ex) *.txt, a* a*.txt
+? : matches exactly one character
+	ex)?.txt,a?,a?.txt
+[] : a character class/matches any of the characters included between the brackets.matches exactly one character
+	ex)ca[nt]*
+[!]: matches any of the characters not included between the brackets.maches excat;y one character
+	ex)[!aeiou*]
+
+
+		
