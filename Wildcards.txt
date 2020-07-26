@@ -11,5 +11,21 @@ Wildcards
 [!]: matches any of the characters not included between the brackets.maches excat;y one character
 	ex)[!aeiou*]
 
+Range :
+use two characters separated by hyphen to create a range in a character class
+1. [a-g]*:matched all files that start with a,b,c,d,e,f or g
 
-		
+2. [3-6]*: maches all files that start with 3,4,5, or 6
+
+<predefined character classes>
+ [[:alpha:]] : matches lower and upper case letters
+ [[:alnum:]] : matches any number,lower case letters and upper case letters 
+ [[:digit:]] : numbers and decimal from 0 -9
+ [[:lower:]] : lower case letters
+ [[:space:]] : characters like spaces,tabs and newline characters
+ [[:upper:]] : upper case letters only
+
+
+*escape from wildcard : | + wildcard
+*일단 *나 ? 를 파일 명으로 정하지 말아라
+ex1) *|? : ?로끝다는 모든 파일 찾기
